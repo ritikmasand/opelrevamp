@@ -3,6 +3,11 @@ import { useState } from 'react';
 import { send } from 'emailjs-com';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import contactImg from "../Assets/contactus.png";
+ import swal from 'sweetalert'
+import Fade from 'react-reveal/Fade';
+import { Col, Row } from 'react-bootstrap';
+import NavBar from "./Shared/Navbar/Navbar";
 
 
 function Newcontact() {
@@ -15,7 +20,7 @@ function Newcontact() {
         });
       
         const onSubmit = (e) => {
-          alert("dsijd");
+          alert("Your details have been submitted successfully");
             // e.preventDefault();
             send(
               'service_q98qlos',
@@ -68,32 +73,46 @@ function Newcontact() {
   />
   <button type='submit'>Submit</button>
 </form> */}
-  console.log(toSend);
+  console.log("Your details have been submitted successfully");
   return (
     <>
+    <NavBar/>
+    <h1 className="headerTitle text-center">CONTACT <span className="headerHighlight">US</span></h1>
+    <div className="headerContent container">
+    <Col md={6}>
+                        <Fade duration={2000} right>
+                            <img src={contactImg} alt="" className="img-fluid"/>
+                        </Fade>
+                    </Col>
+                    </div>
+    <div className="headerContent container">
     <Form  onSubmit={onSubmit}>
+    <Fade duration={2000} left>
       <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Col md={12} lg={6}>
         <Form.Label>From Name</Form.Label>
-        <Form.Control type="text" placeholder="Enter email" onChange={(e)=>{setToSend(prevstate=>({...prevstate,from_name:e.target.value}))}} value={toSend.from_name}/>
+        </Col>
+        <Form.Control type="text" placeholder="Enter your Name" onChange={(e)=>{setToSend(prevstate=>({...prevstate,from_name:e.target.value}))}} value={toSend.from_name}/>
 
         <Form.Text className="text-muted">
           We'll never share your email with anyone else.
         </Form.Text>
       </Form.Group>
-
+      
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>To</Form.Label>
-        <Form.Control type="text" placeholder="Enter email" onChange={(e)=>{setToSend(prevstate=>({...prevstate,to_name:e.target.value}))}} value={toSend.to_name}/>
+        <Form.Control type="text" placeholder="Enter reciever's name" onChange={(e)=>{setToSend(prevstate=>({...prevstate,to_name:e.target.value}))}} value={toSend.to_name}/>
         {/* <Form.Control type="password" placeholder="Password" /> */}
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>description</Form.Label>
-        <Form.Control type="text" placeholder="Enter email" onChange={(e)=>{setToSend(prevstate=>({...prevstate,message:e.target.value}))}} value={toSend.message}/>
+        
+        <Form.Control type="text" placeholder="Enter description" onChange={(e)=>{setToSend(prevstate=>({...prevstate,message:e.target.value}))}} value={toSend.message}/>
         {/* <Form.Control type="password" placeholder="Password" /> */}
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>email id</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" onChange={(e)=>{setToSend(prevstate=>({...prevstate,reply_to:e.target.value}))}} value={toSend.reply_to}/>
+        <Form.Control type="email" placeholder="Enter your email id" onChange={(e)=>{setToSend(prevstate=>({...prevstate,reply_to:e.target.value}))}} value={toSend.reply_to}/>
         {/* <Form.Control type="password" placeholder="Password" /> */}
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
@@ -103,7 +122,10 @@ function Newcontact() {
       <Button variant="primary" type="submit">
         Submit
       </Button>
+      </Fade>
     </Form>
+    
+    </div>
     </>
   );
 }

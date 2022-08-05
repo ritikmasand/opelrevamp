@@ -31,6 +31,11 @@ const NavBar = () => {
                 <Navbar.Brand as={Link} to="/" onClick={scrollTop} className="navBrn">
                     <FontAwesomeIcon icon={faBuffer} className="brnIcon" /> Opel <span className="navHighlight">Consulting</span>
                 </Navbar.Brand>
+               {/* <br />
+               <br />
+               <br />
+               <div style = {{ marginRight:80,marginTop:70, fontSize:7, color: "#060100"}}>Think opel.. Think Software, Talent development, farm solutions…
+</div> */}
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

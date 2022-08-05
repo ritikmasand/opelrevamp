@@ -24,8 +24,8 @@ const Hero = () => {
                             color="text.primary"
                             sx={{ fontWeight: 700 }}
                         >
-                            Opel Consulting{' '} <br />
-                            Services we offer are {' '}
+                           Think opel{' '} <br />
+                             Think {' '}
                             <Typography
                                 color={'primary'}
                                 component={'span'}
@@ -35,7 +35,7 @@ const Hero = () => {
                                 }}
                             >
                                 <Typed
-                                    strings={['Farming Consultancy', 'Software Development Services','Training and Development Services']}
+                                    strings={['Software', ' Talent development','Farm Solutions']}
                                     typeSpeed={100}
                                     loop={true}
                                 />

@@ -21,6 +21,8 @@ import Softwareanddevelopment from './component/Home/Services/softwareanddevelop
 import Traininganddevelopment from './component/Home/Services/trainiganddevelopment';
 import Newservice from './component/newservice';
 import Newcontact from './component/newcontact';
+import Main from './component/views/Form/Main/Main';
+
 
 export const UserContext = createContext();
 
@@ -31,7 +33,10 @@ const App = () => {
   return (
     <UserContext.Provider value={{ user, setUser, admin, setAdmin, selectedService, setSelectedService }}>
       <div>
+        
         <Routes>
+          
+          {/* <Main/> */}
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           {/* <Route path="/aboutpage" element={<Aboutus />} /> */}
@@ -44,7 +49,7 @@ const App = () => {
           <Route path="/Newservice/training-and-development-services" element={<Traininganddevelopment/>} />
           <Route path="/sponsors" element={<Sponsors/>} />
           <Route path="/Newservice" element={<Newservice/>} />
-          <Route path="/Newcontact" element={<Newcontact/>} />
+          <Route path="/Newcontact" element={<Main/>} />
           
            <Route path="/dashboard/*" element={
               <PrivateRoute redirectTo="/login">

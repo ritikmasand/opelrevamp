@@ -5,6 +5,7 @@ import { Container, Row, Col } from "reactstrap";
  import infosys from "../../../Assets/infosys.png";
  import bosch from "../../../Assets/bosch.png";
  import nelito from "../../../Assets/nelito.png";
+ import Fade from 'react-reveal/Fade';
 // import devfolio from "../../../assets/img/Devfolio.png";
 // import matic from "../../../assets/img/Matic.png";
 // import fold from "../../../assets/img/fold.png";
@@ -47,12 +48,15 @@ const Sponsors = () => {
     >
       <Container className=" pt-5">
         <p className={["section-bounties-header h1 ", Styles.title].join(" ")}>
+        
         <h1 className="headerTitle text-center">Partners and<span className="headerHighlight">  customers</span></h1>
+        
           {/* Partners and customers */}
         </p>
         <div className={Styles.under}></div>
 
         <div className="text-center">
+        
           <div style={{ textAlign: "center", marginBottom: "5px" }}>
             <h2 style={{ borderBottom: "1px solid black", display: "inline" }}>
               {/* Title Partners */}
@@ -60,6 +64,7 @@ const Sponsors = () => {
             <br></br>
             <br></br>
           </div>
+         
           <Row>
             <Col
               data-aos="fade-up"
