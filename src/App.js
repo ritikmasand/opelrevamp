@@ -21,7 +21,7 @@ import Softwareanddevelopment from './component/Home/Services/softwareanddevelop
 import Traininganddevelopment from './component/Home/Services/trainiganddevelopment';
 import Newservice from './component/newservice';
 import Newcontact from './component/newcontact';
-import Main from './component/views/Form/Main/Main';
+// import Main from './component/views/Form/Main/Main';
 
 
 export const UserContext = createContext();
@@ -49,7 +49,7 @@ const App = () => {
           <Route path="/Newservice/training-and-development-services" element={<Traininganddevelopment/>} />
           <Route path="/sponsors" element={<Sponsors/>} />
           <Route path="/Newservice" element={<Newservice/>} />
-          <Route path="/Newcontact" element={<Main/>} />
+          <Route path="/Newcontact" element={<Newcontact/>} />
           
            <Route path="/dashboard/*" element={
               <PrivateRoute redirectTo="/login">
