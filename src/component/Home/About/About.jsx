@@ -16,7 +16,8 @@ const About = () => {
                         <Fade duration={2000} right>
                             <p className="miniTitle">about us</p>
                             <h1 className="headerTitle">HOW WE CAN HELP YOUR <span className="headerHighlight">BUSINESS</span> GOAL</h1>
-                            <p className="headerContent">Opel Consulting is an ISO 9001 – 2015 Certified Technology Implementation and Services Company founded in 2012 located in Bangalore, India - the IT hub of the World, backed by IT professionals with a combined experience of over five decades with the core objective to provide cost-effective, quality oriented technology implementation services in the ITES space to clients across the globe with a focus on Education and Health Care, especially to the rural areas.</p>
+                            <p className="headerContent">Opel started with a passion to bring excellent Products through robust software within the reach of every company.
+It saw its initiation in 2012 as a privately held software company with office in Bangalore, India. We set out to help modern organizations and governments transform their relationships with their clients,employees and customers with its out-of-the-box, configurable and scalable enterprise-class solutions deployed on the cloud or on premise.</p>
                             {/* <button className="branBtn">learn More</button> */}
                         </Fade>
                     </div>

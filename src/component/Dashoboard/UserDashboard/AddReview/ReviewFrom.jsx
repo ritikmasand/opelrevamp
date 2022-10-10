@@ -64,7 +64,7 @@ const ReviewForm = ({setIsUpdated}) => {
                 <Form onSubmit={handleSubmit(onSubmit)} className="w-100">
                         <Row className="justify-content-center px-4">
                             <Form.Group as={Col} md={12}>
-                                <Form.Label style={{ fontWeight: "bold" }}>Your Name</Form.Label>
+                                <Form.Label tyle={{ fontWeight: "bold" }}s>Your Name</Form.Label>
                                 <Form.Control
                                     type="text"
                                     defaultValue={name || ""}

@@ -10,7 +10,7 @@ const FooterCol = (props) => {
         <Col md={6} lg={3} className="footerLink">
             <h5>{props.title? props.title : ''}</h5>
             {
-                props.menuItems?.map(({name, id}) => <Link to="/" onClick={scrollUP} key={id}><li>
+                props.menuItems?.map(({name, id,url}) => <Link to={url} onClick={scrollUP} key={id}><li>
                     {/* <FontAwesomeIcon icon={faAngleDoubleRight} 
                 className="footArrowIcon"/> */}
                  {name}</li></Link>)

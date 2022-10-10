@@ -18,7 +18,7 @@ function ControlledCarousel() {
           //src="holder.js/800x400?text=First slide&bg=373940"
           alt="First slide"
           src="https://www.w3schools.com/w3css/img_lights.jpg"
-          height={200}
+          height={400}
           
         />
         <Carousel.Caption>
@@ -32,7 +32,7 @@ function ControlledCarousel() {
          // src="holder.js/800x400?text=Second slide&bg=282c34"
           alt="Second slide"
           src="https://www.w3schools.com/w3css/img_lights.jpg"
-          height={200}
+          height={400}
           margin-auto={50}
         />
 
@@ -47,7 +47,7 @@ function ControlledCarousel() {
           //src="holder.js/800x400?text=Third slide&bg=20232a"
           alt="Third slide"
           src="https://www.w3schools.com/w3css/img_lights.jpg"
-          height={200}
+          height={400}
           margin-auto={50}
         />
 

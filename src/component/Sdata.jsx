@@ -13,14 +13,14 @@ const Sdata = [
         imgsrc: training,
         title: "Training And Development",
         link:"training-and-development-services",
-        description: "We are the best in software developpment"
+        description: "We are the best in Training and developpment"
 
     },
     {
         imgsrc: farming,
         title: "Farming Consultancy",
         link:"farming-consultancy",
-        description: "We are the best in software developpment"
+        description: "We are the best in farming developpment"
     },
     // {
     //     imgsrc: web4,

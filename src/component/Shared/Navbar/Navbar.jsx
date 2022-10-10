@@ -53,7 +53,7 @@ const NavBar = () => {
                             <Nav.Link href="/sponsors" className="nav-link">Partners and customers</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="/newcontact" className="nav-link">Contact Us</Nav.Link>
+                            <Nav.Link href="/Contact2" className="nav-link">Contact Us</Nav.Link>
                         </Nav.Item>
                         {/* <Nav.Item>
                             <Nav.Link as={Link} to="/dashboard/profile" className="nav-link">Dashboard</Nav.Link>

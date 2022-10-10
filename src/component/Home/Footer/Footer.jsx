@@ -23,15 +23,16 @@ const Footer = () => {
                 <Col md={6} lg={3} className="fAboutUs">
                     <h5>ABOUT US</h5>
                     <span className="animate-border"></span>
-                    <p className="aboutUsDes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, voluptate quod facere quas rem quaerat.</p>
+                    <p className="aboutUsDes">Opel started with a passion to bring excellent Products through robust software within the reach of every company.
+                        </p>
                     <ul className="socialIcons">
                         <li>
-                            <Link onClick={scrollUP} to="/" >
+                        <Link to="/">
                                 <FontAwesomeIcon icon={faFacebook}/>
                                 </Link>
                         </li>
                         <li>
-                            <Link onClick={scrollUP} to="/">
+                            <Link to="/">
                                 <FontAwesomeIcon icon={faTwitter}/>
                                 </Link>
                         </li>
@@ -41,17 +42,17 @@ const Footer = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link onClick={scrollUP} to="/">
+                        <Link to="//www.linkedin.com/company/opel-consulting-pvt-ltd/mycompany/" >
                                 <FontAwesomeIcon icon={faLinkedinIn}/>
                             </Link>
                         </li>
                     </ul>
                 </Col>
-                <FooterCol key="2" menuItems={usefulLink} title="USEFUL LINK"/>
-                <FooterCol key="3" menuItems={ourServices} title="OUR SERVICES"/>
-                <FooterCol key="4" menuItems={otherLinks} title="OTHER LINKS"/>
+                 {/* <FooterCol key="2" menuItems={usefulLink} title="USEFUL LINK"/> */}
+                  <FooterCol key="3" menuItems={ourServices} title="OUR SERVICES"/>
+                {/* <FooterCol key="4" menuItems={otherLinks} title="OTHER LINKS"/>  */}
             </Row>
-            {/* <p className="copyRight">Copyright &copy; 2021 <span className="fHighlight">Ritik Masand</span>. All rights reserved.</p> */}
+            <p className="copyRight">Copyright &copy; 2022 <span className="fHighlight">Opel Consulting</span>. All rights reserved.</p>
         </section>
     );
 };

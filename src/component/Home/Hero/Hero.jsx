@@ -87,11 +87,11 @@ const Hero = () => {
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000"
             >
-                {/* <Box
+                <Box
                     component={LazyLoadImage}
                     height={1}
                     width={1}
-                    // src={'https://assets.maccarianagency.com/screenshots/dashboard.png'}
+                     src={'https://assets.maccarianagency.com/screenshots/dashboard.png'}
                     alt="..."
                     effect="blur"
                     boxShadow={3}
@@ -100,7 +100,7 @@ const Hero = () => {
                     sx={{
                         filter: theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
                     }}
-                /> */}
+                />
             </Grid>
         </Grid>
     )

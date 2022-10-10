@@ -9,9 +9,9 @@ export const usefulLink = [
     {name: 'Blog', id: 5}
 ]
 export const ourServices = [
-    {name: 'Software and development', id: 6},
-    {name: 'farming consultancy', id: 7},
-    {name: 'training and development', id: 8}
+    {name: 'Software and development', id: 6,url:'/Newservice/software-development'},
+    {name: 'farming consultancy', id: 7,url:'/Newservice/farming-consultancy'},
+    {name: 'training and development', id: 8,url:'/Newservice/training-and-development-services'}
 
 ]
 export const otherLinks = [
@@ -24,6 +24,6 @@ export const otherLinks = [
 
 export const footerInfo = [
     {icon: faBuffer, info1: 'OPEL CONSULTING', id: 1},
-    {icon: faMobileAlt, info1: '+91xxxxxxxx', info2: 'Ritikmasand10@gmail.com', id: 2},
+    {icon: faMobileAlt, info1: '+918971431488', info2: 'basavana@opelconsulting.com', id: 2},
     {icon: faMapMarkedAlt, info1: 'Benguluru,karnataka', info2: 'India', id: 3}
 ];

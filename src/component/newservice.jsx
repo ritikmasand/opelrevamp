@@ -8,11 +8,13 @@ const newservice = () => {
   return (
     <>
     <NavBar/>
+    <Fade duration={2000} left>
       <div className="my-5">
-      <Fade duration={2000} left>
+      
         <h1 className="text-center">Our Services</h1>
-        </Fade>
+        
       </div>
+
       <div className="container-fluid mb-5">
         <div className="row">
           <div className="col-10 mx-auto">
@@ -23,13 +25,17 @@ const newservice = () => {
                     imgsrc={val.imgsrc}
                     title={val.title}
                     link={val.link}
+                    description={val.description} 
                   />
                 })
             }
             </div>
           </div>
+          
         </div>
+        
       </div>
+      </Fade>
     </>
   );
 };

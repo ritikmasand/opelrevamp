@@ -18,8 +18,8 @@ import Softwareanddevelopment from "./component/Home/Services/softwareanddevelop
 import Traininganddevelopment from "./component/Home/Services/trainiganddevelopment";
 import Newservice from "./component/newservice";
 import Newcontact from "./component/newcontact";
-import ContactUs from "./component/contact3/ContactUs";
-// import Main from './component/views/Form/Main/Main';
+import Contact2 from "./component/Contact2";
+
 
 export const UserContext = createContext();
 
@@ -47,7 +47,7 @@ const App = () => {
           <Route path="/login" element={<LoginModal />} />
           <Route path="/Aboutus" element={<Aboutus />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/Contact3" element={<ContactUs />} />
+          {/* <Route path="/Contact3" element={<ContactUs />} /> */}
           {/* <Route path="/Services" element={<Services/>} /> */}
           <Route
             path="/Newservice/farming-consultancy"
@@ -64,6 +64,8 @@ const App = () => {
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/Newservice" element={<Newservice />} />
           <Route path="/Newcontact" element={<Newcontact />} />
+          <Route path="/Contact2" element={<Contact2/>} />
+       
 
           <Route
             path="/dashboard/*"
